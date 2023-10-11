@@ -454,7 +454,16 @@ FakeFirestore.CollectionReference = class extends FakeFirestore.Query {
   }
 
   count() {
-    return this;
+    return {
+      get: async () =>
+        new Promise(resolve =>
+          resolve({
+            data: () => ({
+              count: this._records().length,
+            }),
+          }),
+        ),
+    };
   }
 
   doc(id = _randomId()) {
