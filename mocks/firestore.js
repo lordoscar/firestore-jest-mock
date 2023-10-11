@@ -453,6 +453,19 @@ FakeFirestore.CollectionReference = class extends FakeFirestore.Query {
     return Promise.resolve(newDoc);
   }
 
+  count() {
+    return {
+      get: async () =>
+        new Promise(resolve =>
+          resolve({
+            data: () => ({
+              count: this._records().length,
+            }),
+          }),
+        ),
+    };
+  }
+
   doc(id = _randomId()) {
     mockDoc(id);
     return new FakeFirestore.DocumentReference(id, this, this.firestore);
