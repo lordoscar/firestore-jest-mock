@@ -1,4 +1,4 @@
-const { mockFirebase, FakeFirestore } = require('firestore-jest-mock');
+const { mockFirebase, FakeFirestore } = require('@upptacka/firestore-jest-mock');
 const {
   mockRunTransaction,
   mockDelete,

@@ -6,7 +6,7 @@ const {
   mockOffset,
   FakeFirestore,
 } = require('../mocks/firestore');
-const { mockFirebase } = require('firestore-jest-mock');
+const { mockFirebase } = require('@upptacka/firestore-jest-mock');
 
 describe('Queries', () => {
   mockFirebase(

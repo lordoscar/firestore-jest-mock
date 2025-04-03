@@ -1,6 +1,6 @@
 {
-  "name": "firestore-jest-mock",
-  "version": "0.21.0",
+  "name": "@upptacka/firestore-jest-mock",
+  "version": "0.21.1",
   "description": "Jest helper for mocking Google Cloud Firestore",
   "author": "",
   "license": "MIT",
@@ -14,7 +14,8 @@
     "lint": "eslint . --ext .js,.ts",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
-    "test:coverage": "npm run test -- --coverage"
+    "test:coverage": "npm run test -- --coverage",
+    "auth": "npx google-artifactregistry-auth"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [

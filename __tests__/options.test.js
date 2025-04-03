@@ -1,4 +1,4 @@
-const { FakeFirestore } = require('firestore-jest-mock');
+const { FakeFirestore } = require('@upptacka/firestore-jest-mock');
 const { mockCollection, mockDoc } = require('firestore-jest-mock/mocks/firestore');
 
 describe('Firestore options', () => {

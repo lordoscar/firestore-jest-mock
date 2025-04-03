@@ -1,4 +1,4 @@
-const { mockFirebase } = require('firestore-jest-mock');
+const { mockFirebase } = require('@upptacka/firestore-jest-mock');
 const { mockInitializeApp } = require('../mocks/firebase');
 const {
   mockCreateUserWithEmailAndPassword,

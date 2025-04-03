@@ -2,7 +2,7 @@ describe.each([
   { library: '@google-cloud/firestore', mockFunction: 'mockGoogleCloudFirestore' },
   { library: '@react-native-firebase/firestore', mockFunction: 'mockReactNativeFirestore' },
 ])('mocking %i with %i', ({ library, mockFunction }) => {
-  const FirestoreMock = require('firestore-jest-mock');
+  const FirestoreMock = require('@upptacka/firestore-jest-mock');
 
   const flushPromises = () => new Promise(setImmediate);
   const { Timestamp } = require('../mocks/timestamp');

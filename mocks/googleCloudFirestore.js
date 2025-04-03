@@ -1,7 +1,7 @@
 const defaultOptions = require('./helpers/defaultMockOptions');
 
 const firestoreStub = (overrides, options = defaultOptions) => {
-  const { FakeFirestore } = require('firestore-jest-mock');
+  const { FakeFirestore } = require('@upptacka/firestore-jest-mock');
 
   class Firestore extends FakeFirestore {
     constructor() {

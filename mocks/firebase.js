@@ -4,7 +4,7 @@ const mockCert = jest.fn();
 const defaultOptions = require('./helpers/defaultMockOptions');
 
 const firebaseStub = (overrides, options = defaultOptions) => {
-  const { FakeFirestore, FakeAuth } = require('firestore-jest-mock');
+  const { FakeFirestore, FakeAuth } = require('@upptacka/firestore-jest-mock');
 
   // Prepare namespaced classes
   function firestoreConstructor() {
